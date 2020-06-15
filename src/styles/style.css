@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+#content {
+    float: left;
+    width: 75%;
+ }
+
+main {
+    padding: 20px;
+    overflow: auto;
+ }
+
+h2, h3 {
+    color: #00a2c6;
+}
+
+nav a:hover {
+   font-size: 18px;
+   font-weight: 400;
+   text-decoration: none;
+}
+
+footer {
+    padding: 4px;
+    color: white;
+    background-color: #00a2c6;
+    text-align: center;
+    font-weight: bold;
+ }
+.profile header {
+   text-align: center;
+}
+.jumbotron {
+   font-size: 20px;
+   padding: 0px;
+   text-align: center;
+   color: white;
+}
+.posisi {
+   position: absolute;
+   top: 50%;
+   left: 35%;
+   transform: translate(-50%, -50%);
+ }
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+    border-right:1px solid #bbb;
+}
+
+header {
+    display: inline;
+ }
+
+nav {
+    background-color: #1789a3;
+    padding: 5px;
+    text-align: right;
+    position: sticky;
+    top: 0;
+ }
+
+nav a {
+   font-size: 18px;
+   font-weight: 400;
+   text-decoration: none;
+   text-align: center;
+}
+nav ul {
+   list-style: none;
+ }
+ nav ul li {
+   display: inline-block;
+ }
+ nav ul li a {
+   display: block;
+   color: #aaa;
+   text-transform: uppercase;
+   margin: 0 10px;
+ }
+ nav ul li a,
+ nav ul li a:after,
+ nav ul li a:before {
+   transition: all .5s;
+ }
+ nav ul li a:hover {
+   color: rgb(250, 248, 248);
+ }
+
+.featured-image {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    object-position: center;
+ }
+
+ .profile img {
+    width: 150px;
+    object-position: center;
+ }
+
+ .article p{
+    font-size: 25px;
+    text-align: center;
+    padding: 20px;
+ }
+
+aside {
+    float: right;
+    width: 25%;
+    padding-left: 20px;
+ }
+
+ @media screen and (max-width: 1000px) {
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+ }
+
+ .card {
+    box-shadow: 2px 4px 8px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 10px;
+ }
+
+ * {
+    box-sizing: border-box;
+ }
+
+ .tulisan_login{
+	text-align: center;
+	/*membuat semua huruf menjadi kapital*/
+	text-transform: uppercase;
+}
+ 
+.kotak_login{
+	width: 350px;
+	background: white;
+	/*meletakkan form ke tengah*/
+	margin: 1px auto;
+	padding: 30px 20px;
+}
+ 
+label{
+	font-size: 11pt;
+}
+ 
+.form_login{
+	/*membuat lebar form penuh*/
+	box-sizing : border-box;
+	width: 100%;
+	padding: 10px;
+	font-size: 11pt;
+	margin-bottom: 20px;
+}
+ 
+.tombol{
+	background: #105363;
+	color: white;
+   font-size: 11pt;
+   cursor: pointer;
+	width: 100%;
+	border: none;
+	border-radius: 3px;
+	padding: 10px 20px;
+}
+.tombol:hover {
+   background-color: #7fc2dd;
+   opacity: 0.8;
+}
+
+.link{
+	color: #232323;
+	text-decoration: none;
+   font-size: 10pt;
+   float: right;
+}
+
+.level{
+   
+   margin-bottom: 20px;
+   width: 100%;
+}
+.history {
+   width: 100%;
+   text-align: center;
+}
+
+.table {
+   width: 100%;
+   border: 1px solid black;
+   border-collapse: collapse;
+   padding: 15px;
+ }
+.table th{
+   background-color: rgb(22, 150, 143);
+   color: white;
+   height: 50px;
+   border: 1px solid black;
+}
+.table td{
+   height: 50px;
+   text-align: center;
+   border: 1px solid black;
+}
+/* Circle */
+nav.circle ul li a {
+   position: relative;
+   overflow: hidden;
+   z-index: 1;
+ }
+ nav.circle ul li a:after {
+   display: block;
+   position: absolute;
+   margin: 0;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   content: '.';
+   color: transparent;
+   width: 1px;
+   height: 1px;
+   border-radius: 50%;
+   background: transparent;
+ }
+ nav.circle ul li a:hover:after {
+   -webkit-animation: circle 1.5s ease-in forwards;
+ }
+
+makanan-list {
+   margin-top: 32px;
+   width: 100%;
+   padding: 16px;
+}
